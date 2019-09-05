@@ -27,10 +27,10 @@ public class UserRegisteration {
 		Select country = new Select(driver.findElement(By.name("country")));
 		country.selectByVisibleText("AUSTRALIA");
 		driver.findElement(By.name("register")).click();
-		//driver.findElement(By.xpath("//a[contains(text(),'SIGN-OFF')]")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'SIGN-OFF')]")).click();
 		
-		//driver.close();
-		//driver.quit();
+		driver.close();
+		driver.quit();
 		
 		
 		
